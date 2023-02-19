@@ -1,0 +1,20 @@
+PODS:
+  - PinLayout (1.10.3)
+  - Typist (1.4.2)
+
+DEPENDENCIES:
+  - PinLayout
+  - Typist
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PinLayout
+    - Typist
+
+SPEC CHECKSUMS:
+  PinLayout: 0090ccbf29ae69af6ae5a15eaeaf27ed7b2c4d83
+  Typist: 06465ab9867782aa6c81e38f073dfc01dab73deb
+
+PODFILE CHECKSUM: e3c02362a8b7eff2023df8eb53fa2f5b22cd2c9c
+
+COCOAPODS: 1.11.3

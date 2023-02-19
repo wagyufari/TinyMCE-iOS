@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://cdn.tiny.cloud/1/apikey/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <textarea id='textarea'>
+  </textarea>
+  <script>
+    tinymce.init({
+      selector: 'textarea',  // change this value according to your HTML
+      plugins: 'anchor autolink charmap codesample lists fullscreen textpattern autoresize mentions',
+      toolbar: 'undo redo | blocks | bold italic underline strikethrough | checklist numlist bullist indent outdent',
+      branding: false,
+      tinycomments_mode: 'embedded',
+      fullscreen_new_window: true,
+      fullscreen_default_content: true,
+      tinycomments_author: 'Author name',
+      placeholder: "Write a comment",
+      toolbar_location: 'bottom',
+      toolbar_mode: 'floating',
+      toolbar: false,
+      menubar: false,
+      statusbar: false,
+      setup: function(editor) {
+      editor.on('init', function(e) {
+        editor.execCommand('mceFullScreen');
+        sendMethods(editor);
+      });
+      editor.on('input', function() {
+          sendMethods(editor);
+      });
+    editor.on('change', function(e) {
+        sendMethods(editor);
+    });
+      editor.on('NodeChange', function(e) {
+         sendMethods(editor);
+      });
+      
+    },
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ],
+    });
+
+      function sendMethods(editor) {
+          var isMentionDetected = false
+          var regex = /@\w+/i; // Change this to whatever mention delimiter you're looking for
+          if (regex.test(editor.getContent())) {
+              isMentionDetected = true
+            }
+          
+        var formatblock = ""
+        
+        if (editor.formatter.match('p')) {
+            formatblock = 'p'
+        } else if (editor.formatter.match('h1')) {
+            formatblock = 'h1'
+        } else if (editor.formatter.match('h2')) {
+            formatblock = 'h2'
+        } else if (editor.formatter.match('h3')) {
+            formatblock = 'h3'
+        } else if (editor.formatter.match('h4')) {
+            formatblock = 'h4'
+        } else if (editor.formatter.match('h5')) {
+            formatblock = 'h5'
+        } else if (editor.formatter.match('h6')) {
+            formatblock = 'h6'
+        }
+          
+        window.webkit.messageHandlers.JSEvent.postMessage(JSON.stringify({
+            height: editor.getBody().scrollHeight,
+            mention: {
+                isMentionDetected: isMentionDetected,
+            },
+            formatter: {
+                isBold: editor.formatter.match('bold'),
+                isItalic: editor.formatter.match('italic'),
+                isUnderline: editor.formatter.match('underline'),
+                isStrikethrough: editor.formatter.match('strikethrough'),
+                formatblock: formatblock,
+                isOrderedList: editor.queryCommandState('InsertOrderedList'),
+                isOrderedList: editor.queryCommandState('InsertUnorderedList'),
+                hasUndo: editor.undoManager.hasUndo(),
+                hasRedo: editor.undoManager.hasRedo(),
+            }
+        }))
+      }
+
+  </script>
+</body>
+</html>

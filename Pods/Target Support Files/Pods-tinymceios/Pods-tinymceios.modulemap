@@ -1,0 +1,6 @@
+framework module Pods_tinymceios {
+  umbrella header "Pods-tinymceios-umbrella.h"
+
+  export *
+  module * { export * }
+}

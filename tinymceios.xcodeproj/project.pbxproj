@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38307259E278E46F043B635B /* Pods_tinymceios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE61BA6108A876BF3AB468 /* Pods_tinymceios.framework */; };
+		3F35FC3029A153130094B945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC2F29A153130094B945 /* AppDelegate.swift */; };
+		3F35FC3229A153130094B945 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC3129A153130094B945 /* SceneDelegate.swift */; };
+		3F35FC3729A153130094B945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F35FC3529A153130094B945 /* Main.storyboard */; };
+		3F35FC3929A153150094B945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35FC3829A153150094B945 /* Assets.xcassets */; };
+		3F35FC3C29A153150094B945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F35FC3A29A153150094B945 /* LaunchScreen.storyboard */; };
+		3F35FC5129A154400094B945 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4629A1543F0094B945 /* UIColor+Extension.swift */; };
+		3F35FC5229A154400094B945 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4729A1543F0094B945 /* UIView+Extension.swift */; };
+		3F35FC5329A154400094B945 /* HasApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4829A1543F0094B945 /* HasApply.swift */; };
+		3F35FC5429A154400094B945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4929A154400094B945 /* ViewController.swift */; };
+		3F35FC5529A154400094B945 /* HtmlFontSizeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4B29A154400094B945 /* HtmlFontSizeConstant.swift */; };
+		3F35FC5629A154400094B945 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F35FC4C29A154400094B945 /* editor.html */; };
+		3F35FC5729A154400094B945 /* TinyMCEToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4D29A154400094B945 /* TinyMCEToolbar.swift */; };
+		3F35FC5829A154400094B945 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4E29A154400094B945 /* BottomSheetView.swift */; };
+		3F35FC5929A154400094B945 /* UIStackPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC4F29A154400094B945 /* UIStackPinView.swift */; };
+		3F35FC5A29A154400094B945 /* FontSizeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35FC5029A154400094B945 /* FontSizeSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21415057E020E9CA016CE1DC /* Pods-tinymceios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinymceios.release.xcconfig"; path = "Target Support Files/Pods-tinymceios/Pods-tinymceios.release.xcconfig"; sourceTree = "<group>"; };
+		34BE61BA6108A876BF3AB468 /* Pods_tinymceios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tinymceios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F35FC2C29A153130094B945 /* tinymceios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinymceios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F35FC2F29A153130094B945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F35FC3129A153130094B945 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F35FC3629A153130094B945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F35FC3829A153150094B945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F35FC3B29A153150094B945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F35FC3D29A153150094B945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F35FC4629A1543F0094B945 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3F35FC4729A1543F0094B945 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3F35FC4829A1543F0094B945 /* HasApply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasApply.swift; sourceTree = "<group>"; };
+		3F35FC4929A154400094B945 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F35FC4B29A154400094B945 /* HtmlFontSizeConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlFontSizeConstant.swift; sourceTree = "<group>"; };
+		3F35FC4C29A154400094B945 /* editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = editor.html; sourceTree = "<group>"; };
+		3F35FC4D29A154400094B945 /* TinyMCEToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyMCEToolbar.swift; sourceTree = "<group>"; };
+		3F35FC4E29A154400094B945 /* BottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		3F35FC4F29A154400094B945 /* UIStackPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackPinView.swift; sourceTree = "<group>"; };
+		3F35FC5029A154400094B945 /* FontSizeSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeSheet.swift; sourceTree = "<group>"; };
+		C2501F4953461B8641297E96 /* Pods-tinymceios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinymceios.debug.xcconfig"; path = "Target Support Files/Pods-tinymceios/Pods-tinymceios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F35FC2929A153130094B945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38307259E278E46F043B635B /* Pods_tinymceios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F35FC2329A153130094B945 = {
+			isa = PBXGroup;
+			children = (
+				3F35FC2E29A153130094B945 /* tinymceios */,
+				3F35FC2D29A153130094B945 /* Products */,
+				B05CD819F90A8AFC12C9CFD5 /* Pods */,
+				D9E11D3F888FD52A8157F14D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F35FC2D29A153130094B945 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F35FC2C29A153130094B945 /* tinymceios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F35FC2E29A153130094B945 /* tinymceios */ = {
+			isa = PBXGroup;
+			children = (
+				3F35FC2F29A153130094B945 /* AppDelegate.swift */,
+				3F35FC3129A153130094B945 /* SceneDelegate.swift */,
+				3F35FC3529A153130094B945 /* Main.storyboard */,
+				3F35FC3829A153150094B945 /* Assets.xcassets */,
+				3F35FC3A29A153150094B945 /* LaunchScreen.storyboard */,
+				3F35FC4529A1543F0094B945 /* Extensions */,
+				3F35FC4A29A154400094B945 /* Utils */,
+				3F35FC4929A154400094B945 /* ViewController.swift */,
+				3F35FC3D29A153150094B945 /* Info.plist */,
+			);
+			path = tinymceios;
+			sourceTree = "<group>";
+		};
+		3F35FC4529A1543F0094B945 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F35FC4629A1543F0094B945 /* UIColor+Extension.swift */,
+				3F35FC4729A1543F0094B945 /* UIView+Extension.swift */,
+				3F35FC4829A1543F0094B945 /* HasApply.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F35FC4A29A154400094B945 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3F35FC4B29A154400094B945 /* HtmlFontSizeConstant.swift */,
+				3F35FC4C29A154400094B945 /* editor.html */,
+				3F35FC4D29A154400094B945 /* TinyMCEToolbar.swift */,
+				3F35FC4E29A154400094B945 /* BottomSheetView.swift */,
+				3F35FC4F29A154400094B945 /* UIStackPinView.swift */,
+				3F35FC5029A154400094B945 /* FontSizeSheet.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B05CD819F90A8AFC12C9CFD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2501F4953461B8641297E96 /* Pods-tinymceios.debug.xcconfig */,
+				21415057E020E9CA016CE1DC /* Pods-tinymceios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9E11D3F888FD52A8157F14D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34BE61BA6108A876BF3AB468 /* Pods_tinymceios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F35FC2B29A153130094B945 /* tinymceios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F35FC4029A153150094B945 /* Build configuration list for PBXNativeTarget "tinymceios" */;
+			buildPhases = (
+				646B4499462FF4D1FD4393AC /* [CP] Check Pods Manifest.lock */,
+				3F35FC2829A153130094B945 /* Sources */,
+				3F35FC2929A153130094B945 /* Frameworks */,
+				3F35FC2A29A153130094B945 /* Resources */,
+				E1A6BD60CA07FF9AA8B7714A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tinymceios;
+			productName = tinymceios;
+			productReference = 3F35FC2C29A153130094B945 /* tinymceios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F35FC2429A153130094B945 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3F35FC2B29A153130094B945 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3F35FC2729A153130094B945 /* Build configuration list for PBXProject "tinymceios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F35FC2329A153130094B945;
+			productRefGroup = 3F35FC2D29A153130094B945 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F35FC2B29A153130094B945 /* tinymceios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F35FC2A29A153130094B945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F35FC3C29A153150094B945 /* LaunchScreen.storyboard in Resources */,
+				3F35FC5629A154400094B945 /* editor.html in Resources */,
+				3F35FC3929A153150094B945 /* Assets.xcassets in Resources */,
+				3F35FC3729A153130094B945 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		646B4499462FF4D1FD4393AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tinymceios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A6BD60CA07FF9AA8B7714A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tinymceios/Pods-tinymceios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tinymceios/Pods-tinymceios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tinymceios/Pods-tinymceios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F35FC2829A153130094B945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F35FC5429A154400094B945 /* ViewController.swift in Sources */,
+				3F35FC5129A154400094B945 /* UIColor+Extension.swift in Sources */,
+				3F35FC5829A154400094B945 /* BottomSheetView.swift in Sources */,
+				3F35FC5A29A154400094B945 /* FontSizeSheet.swift in Sources */,
+				3F35FC5529A154400094B945 /* HtmlFontSizeConstant.swift in Sources */,
+				3F35FC5729A154400094B945 /* TinyMCEToolbar.swift in Sources */,
+				3F35FC5929A154400094B945 /* UIStackPinView.swift in Sources */,
+				3F35FC5329A154400094B945 /* HasApply.swift in Sources */,
+				3F35FC3029A153130094B945 /* AppDelegate.swift in Sources */,
+				3F35FC5229A154400094B945 /* UIView+Extension.swift in Sources */,
+				3F35FC3229A153130094B945 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F35FC3529A153130094B945 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F35FC3629A153130094B945 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F35FC3A29A153150094B945 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F35FC3B29A153150094B945 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F35FC3E29A153150094B945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F35FC3F29A153150094B945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F35FC4129A153150094B945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2501F4953461B8641297E96 /* Pods-tinymceios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E3E3255CM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tinymceios/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wagyufari.tinymceios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F35FC4229A153150094B945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21415057E020E9CA016CE1DC /* Pods-tinymceios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E3E3255CM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tinymceios/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wagyufari.tinymceios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F35FC2729A153130094B945 /* Build configuration list for PBXProject "tinymceios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F35FC3E29A153150094B945 /* Debug */,
+				3F35FC3F29A153150094B945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F35FC4029A153150094B945 /* Build configuration list for PBXNativeTarget "tinymceios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F35FC4129A153150094B945 /* Debug */,
+				3F35FC4229A153150094B945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F35FC2429A153130094B945 /* Project object */;
+}
